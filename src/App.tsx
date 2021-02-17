@@ -1,8 +1,7 @@
 /**
- * Key takeaway: we can use map in combination with higher-order
- *  functions to make our code more concise
- *
- * TASK: replace the QWERTY row by also using a map
+ * Key takeaway: we very rarely want an 'uncontrolled input' in React.
+ *  We normally want to control its input so that we can use its data
+ *  somehow.
  */
 
 import ButtonControlledInput from "./components/ButtonControlledInput";
