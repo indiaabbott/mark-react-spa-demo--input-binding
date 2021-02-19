@@ -1,4 +1,8 @@
+import {useState} from "react"
+
 function UncontrolledInput() {
+  const [name, setName] = useState("")
+  console.log(name)
   return (
     <>
       <h3>
@@ -8,7 +12,11 @@ function UncontrolledInput() {
         This means you can type in it freely, but (unlike our controlled input)
         you can't easily access its value in a React-friendly way.
       </p>
-      <input />
+      <input onChange={(event) => 
+      {console.log(event.target.value)
+      setName(event.target.value)
+      }
+      }/>
       <button
         onClick={() => {
           console.log(

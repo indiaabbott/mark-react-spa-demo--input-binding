@@ -7,12 +7,14 @@
 import ButtonControlledInput from "./components/ButtonControlledInput";
 import KeyboardControlledInput from "./components/KeyboardControlledInput";
 import UncontrolledInput from "./components/UncontrolledInput";
+import TestingComponent from "./components/TestingComponent";
 
 function App() {
   return (
     <div>
       <h1>Inputs</h1>
-
+      <TestingComponent />
+      <hr />
       <ButtonControlledInput />
       <hr />
       <UncontrolledInput />

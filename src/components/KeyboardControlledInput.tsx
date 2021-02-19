@@ -20,16 +20,18 @@ function KeyboardControlledInput() {
            *  event.target.value
            */
           setTypedMessage(event.target.value);
+          console.log(event.target.value);
         }}
       />
       <button
-        onClick={() =>
+        onClick={() => {
           console.log(
             "keyboard controlled input:\n",
             typedMessage,
             "\n\nwhich we could in principle process in some way"
           )
-        }
+          setTypedMessage("thanks!")
+        }}
       >
         Log input
       </button>
